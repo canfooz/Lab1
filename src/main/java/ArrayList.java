@@ -22,6 +22,7 @@ public class ArrayList<T> {
      * Places the newElement in a new array element
      */
     public void add(T newElement) {
+        if(lastIndex == array.length-1)
         array = Arrays.copyOf(array, array.length + 1);
         array[lastIndex++] = newElement;
     }

@@ -16,6 +16,7 @@ public class Main {
         arr.add("seven");
         System.out.println(arr.get(0));
         System.out.println(arr.get(2));
+        System.out.println(arr.get(8));
         arr.remove(0);
         System.out.println(arr.get(0));
 

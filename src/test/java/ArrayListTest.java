@@ -42,7 +42,7 @@ class ArrayListTest {
         arr.add("0");
         arr.add("1");
         arr.add("2");
-        Assertions.assertThrows(IndexOutOfBoundsException.class, ()->{arr.get(10);});
+        Assertions.assertThrows(IndexOutOfBoundsException.class, ()-> arr.get(10));
     }
 
     @Test
@@ -50,8 +50,6 @@ class ArrayListTest {
         arr.add("0");
         arr.add("1");
         arr.add("2");
-        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> {
-            arr.remove(10);
-        });
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> arr.remove(10));
     }
 }
